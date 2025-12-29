@@ -1,0 +1,91 @@
+.product-detail-page {
+  background: #fff;
+  border-radius: 8px;
+  padding: 30px 18px;
+  box-shadow: 0 2px 12px rgba(66, 165, 245, 0.09);
+}
+
+.product-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1976d2;
+  margin-bottom: 8px;
+}
+
+.product-info-list > div {
+  font-size: 1.09rem;
+  margin-bottom: 0.25em;
+  color: #222;
+}
+
+.product-price {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.product-description {
+  font-size: 1.1rem;
+  color: #222;
+  line-height: 1.7;
+}
+
+.product-description img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px rgba(33, 150, 243, 0.09);
+  display: block;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Banner styles */
+.header-slider {
+  height: 75vh; /* 3/4 màn hình */
+  min-height: 240px;
+  max-height: 600px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: #f0f4f8;
+  margin-bottom: 1rem;
+}
+.header-images {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Đảm bảo ảnh che phủ toàn bộ banner, không có khoảng trắng */
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: 1;
+}
+.slide-img.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+/* Sidebar full height */
+#right-menu.sidebar,
+#right-menu {
+  min-height: 100vh;
+  height: 100vh;
+  background: #f8f9fa;
+  box-shadow: 1px 0 8px rgba(66, 165, 245, 0.07);
+  padding-top: 32px;
+  /* Đảm bảo menu trải dài toàn màn hình */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
